@@ -1,0 +1,32 @@
+{
+  "name": "dezignspiration_frontend",
+  "version": "1.0.0",
+  "description": "Frontend web application for Dezignspiration",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnxy84/DezignSpirationFE.git"
+  },
+  "keywords": [
+    "Dezignspiration",
+    "DezignspirationFrontend"
+  ],
+  "author": "John Okoroafor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnxy84/DezignSpirationFE/issues"
+  },
+  "homepage": "https://github.com/johnxy84/DezignSpirationFE#readme",
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11"
+  }
+
+}

@@ -1,0 +1,45 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dezignspiration-frontend
+  labels:
+    app: dezignspiration-frontend
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  minReadySeconds: 60
+  revisionHistoryLimit: 5
+  template:
+    metadata:
+      labels:
+        app: dezignspiration-frontend
+    spec:
+      # Grant access to azure container Registry
+      imagePullSecrets:
+        - name: auth-config
+      containers:
+      - image: DUMMY_IMAGE_NAME
+        name: dezignspiration-frontend
+        ports:
+        - containerPort: 80
+          protocol: TCP
+          name: http
+        - containerPort: 443
+          protocol: TCP
+          name: https
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80
+          periodSeconds: 60
+          initialDelaySeconds: 10
+
+        env:
+        - name: NODE_PATH
+          value: "."
+        - name: PORT
+          value: 80

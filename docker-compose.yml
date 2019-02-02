@@ -1,0 +1,16 @@
+version: '2'
+
+
+# Take away host port mappings if there are any clashes
+# To speed up development, internal container ports are mapped to specific host ports 
+services:
+    designspiraton_frontend:
+        image: dezignspiration_frontend
+        container_name: designspiraton_frontend
+        build: .
+        networks: 
+        - main_network
+            
+networks:
+    main_network:
+        driver: bridge
