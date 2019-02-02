@@ -42,4 +42,4 @@ spec:
         - name: NODE_PATH
           value: "."
         - name: PORT
-          value: 80
+          value: "80"
