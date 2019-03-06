@@ -1,8 +1,146 @@
-body {
-  padding: 50px;
+body, html {
+  padding: 0;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.page-header {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/bg-img.jpg)  no-repeat;
+  background-size: cover;
+}
+
+.page-header .navbar {
+  padding: 20px 0;
+}
+
+.page-header .navbar h1 {
+  font-size: 30px;
+}
+
+.page-header div.header-content {
+  flex-grow: 1;
+}
+
+div.scroll-down, div.scroll-up {
+  height: 30px;
+  font-size: 20px;
+}
+
+.scroll-up span, .scroll-down span {
+  cursor: pointer;
+}
+
+button, button:focus, .btn {
+  outline: none !important;
+}
+
+.btn-custom {
+  outline: none !important;
+  min-width: 150px;
+  padding: 13px;
+  background: #f8f9fb;
+  background: linear-gradient(65deg, #FF4D79 0, #FF809F 100%);
+  box-shadow: 0 8px 16px rgba(255, 77, 121, .25);
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 4px;
+  transition: all .2s linear;
+  border: 0;
+}
+
+.btn-custom.sm {
+  padding: 8px;
+  min-width: 80px;
+  font-size: 10px;
+}
+
+.btn-custom.btn-capsule-custom {
+  border-radius: 50px;
+}
+
+input {
+  outline: none !important;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=date] {
+  width: 100%;
+  display: block;
+  padding: 14px;
+  font-size: 14px;
+  border-radius: 4px;
+  text-align: left;
+  border: 1px solid #ececec;
+  box-shadow: 6px 0 43px rgba(131,131,131,.13);
+  transition: all .3s;
+  background: #fff;
+}
+
+.page-footer {
+  background-color: #000;
+  color: #FFF !important;
+}
+
+.page-footer .footer-content {
+  padding: 20px 0;
+}
+
+div.round-link {
+  border: 1px solid #FFF;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50% !important;
+}
+
+.round-link.green {
+  border: 1px solid green;
+  color: green;
+}
+
+.round-link.red {
+  border: 1px solid red;
+  color: red;
+}
+
+.section {
+  height: 250px;
+  min-height: 250px;
+}
+
+.section.var-height {
+  min-height: 250px;
+  height: auto !important;
+}
+
+.quote-section {
+  background-color: blue;
+  color: #FFF;
+}
+
+p.quote {
+  font-size: 20px;
+}
+
+.about-section {
+  position: relative;
+}
+
+.about-section div.quotation {
+  font-size: 40px;
+  position: absolute;
+  top: -39px;
+  left: 5px;
+  transform: rotateX(180deg) rotateY(180deg);
 }
