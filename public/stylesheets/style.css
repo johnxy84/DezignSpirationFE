@@ -1,7 +1,12 @@
+* {
+  font-family: 'Neuton', serif;
+}
+
 body, html {
   padding: 0;
   margin: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-family: 'Neuton', serif;
 }
 
 .page-header {
@@ -105,13 +110,13 @@ div.round-link {
 }
 
 .round-link.green {
-  border: 1px solid green;
-  color: green;
+  border: 1px solid #1D9A21;
+  color: #1D9A21;
 }
 
 .round-link.red {
-  border: 1px solid red;
-  color: red;
+  border: 1px solid #D34242;
+  color: #D34242;
 }
 
 .section {
@@ -125,12 +130,12 @@ div.round-link {
 }
 
 .quote-section {
-  background-color: blue;
+  background-color: #2C56E3;
   color: #FFF;
 }
 
 p.quote {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .about-section {
@@ -138,9 +143,24 @@ p.quote {
 }
 
 .about-section div.quotation {
-  font-size: 40px;
-  position: absolute;
-  top: -39px;
-  left: 5px;
-  transform: rotateX(180deg) rotateY(180deg);
+  font-size: 60px;
+  line-height: 30px;
+  font-family: 'Helvetica Neue Medium', serif !important;
+  font-weight: bold;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
