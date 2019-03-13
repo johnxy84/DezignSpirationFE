@@ -8,6 +8,8 @@
 
         <link href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css" rel="stylesheet">
         <link href="/scripts/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
+        <link href="/fonts/helvetica_neue/Helvetica_Neue.css" rel="stylesheet">
         <link href="/stylesheets/style.css" rel="stylesheet">
     </head>
     <body>
@@ -22,9 +24,9 @@
             <div class="header-content">
                 <div class="container h-100">
                     <div class="row align-items-center h-100">
-                        <div class="text-center m-auto col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+                        <div class="text-left col-6 col-sm-8 col-md-6 col-lg-5 col-xl-4">
                             <h1 style="padding: 30px 0;" class="text-white font-weight-bold">
-                                Even <u>Designers</u>, Need <u>Inspiration</u>.
+                                Even <u>Designers</u>,<br/>Need <u>Inspiration</u>.
                             </h1>
                             <button class="btn-custom">
                                 <i class="lni-mobile"></i>
@@ -37,7 +39,7 @@
             <div class="text-center scroll-down">
                 <div class="container h-100">
                     <div class="col align-items-center h-100">
-                        <span>
+                        <span id="scroll-down" class="bounce">
                             <i class="lni-angle-double-down text-white font-weight-bold"></i>
                         </span>
                     </div>
@@ -45,33 +47,35 @@
             </div>
         </header>
 
-        <section class="section var-height">
+        <section id="v-body" class="section var-height">
             <div class="container h-100">
                 <div class="text-center scroll-up mt-2">
                     <div class="container h-100">
                         <div class="col align-items-center h-100">
-                            <span>
+                            <span id="scroll-up">
                                 <i class="lni-angle-double-up font-weight-bold"></i>
                             </span>
                         </div>
                     </div>
                 </div>
                 <div class="section-content row align-items-center h-100 my-5">
-                    <div class="m-auto col-12">
-                        <div class="about-section text-center mb-5 mt-5">
+                    <div class="m-auto col-12 col-lg-6">
+                        <div class="about-section text-left text-md-center mb-3 mt-5">
                             <div class="quotation">
-                                <i class="lni-quotation"></i>
+                                “
                             </div>
                             <h4 class="opening-line font-weight-bold">
-                                Dezignspiration keeps the mind of the designer as inspired as can be. Designers have
+                                Dezignspiration keeps the mind of the designer as inspired as can be.<br/>Designers have
                                 access to plethora of design quotes from famous designers such as Steve Jobs, Dieter Rams,
                                 Don Norman as well as have the opportunity to air their Design voice in brief meaningful Quotes
                             </h4>
                         </div>
-                        <div class="feature-section my-5">
+                    </div>
+                    <div class="m-auto col-12">
+                        <div class="feature-section my-3">
                             <div class="row">
-                                <div class="text-center col-12 col-md-6 col-lg-4 col-xl-3 my-5">
-                                    <div class="m-auto round-link green align-items-center">
+                                <div class="text-left text-md-center col-12 col-md-6 col-lg-4 col-xl-3 my-3">
+                                    <div class="m-md-auto round-link green align-items-center">
                                         <i class="lni-bolt"></i>
                                     </div>
                                     <p class="mt-2 font-weight-bold">
@@ -79,8 +83,8 @@
                                     </p>
                                 </div>
 
-                                <div class="text-center col-12 col-md-6 col-lg-4 col-xl-3 my-5">
-                                    <div class="m-auto round-link red align-items-center">
+                                <div class="text-left text-md-center col-12 col-md-6 col-lg-4 col-xl-3 my-3">
+                                    <div class="m-md-auto round-link red align-items-center">
                                         <i class="lni-share"></i>
                                     </div>
                                     <p class="mt-2 font-weight-bold">
@@ -88,8 +92,8 @@
                                     </p>
                                 </div>
 
-                                <div class="text-center col-12 col-md-6 col-lg-4 col-xl-3 my-5">
-                                    <div class="m-auto round-link green align-items-center">
+                                <div class="text-left text-md-center col-12 col-md-6 col-lg-4 col-xl-3 my-3">
+                                    <div class="m-md-auto round-link green align-items-center">
                                         <i class="lni-volume-high"></i>
                                     </div>
                                     <p class="mt-2 font-weight-bold">
@@ -97,8 +101,8 @@
                                     </p>
                                 </div>
 
-                                <div class="text-center col-12 col-md-6 offset-lg-4 col-lg-4 offset-xl-0 col-xl-3 my-5">
-                                    <div class="m-auto round-link red align-items-center">
+                                <div class="text-left text-md-center col-12 col-md-6 offset-lg-4 col-lg-4 offset-xl-0 col-xl-3 my-3">
+                                    <div class="m-md-auto round-link red align-items-center">
                                         <i class="lni-shield"></i>
                                     </div>
                                     <p class="mt-2 font-weight-bold">
@@ -117,13 +121,13 @@
                 <div class="section-content row align-items-center h-100">
                     <div class="m-auto col-12">
                         <div class="subscribe-form text-center">
-                            <h5 class="font-weight-bold">Quote of The Day</h5>
+                            <h5 class="font-weight-bold" style="font-size: 14px;">Quote of The Day</h5>
 
                             <p class="my-5 font-weight-bold quote">
                                 Design is not Just what it looks like, Design is also how it works.
                             </p>
 
-                            <p class="font-weight-bold">Steve Jobs</p>
+                            <p class="font-weight-bold" style="font-size: 14px;">Steve Jobs</p>
                         </div>
                     </div>
                 </div>
@@ -143,7 +147,6 @@
                                     <input type="email" name="email_address" placeholder="What&apos;s your email..." required />
                                 </div>
                                 <button class="w-100 btn-custom">
-                                    <i class="lni-thumbs-up"></i>
                                     Sign Me Up!
                                 </button>
                             </form>
@@ -166,7 +169,6 @@
                                     <input type="text" name="message" placeholder="Say Something..." required />
                                 </div>
                                 <button class="w-100 btn-custom">
-                                    <i class="lni-envelope"></i>
                                     Send Message
                                 </button>
                             </form>
@@ -201,7 +203,8 @@
             </div>
         </footer>
 
-        <script src="/scripts/jquery/dist/jquery.slim.js"></script>
+        <script src="/scripts/jquery/dist/jquery.js"></script>
         <script src="/scripts/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>
