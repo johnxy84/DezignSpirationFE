@@ -98,13 +98,13 @@ function renderAlert (type, message) {
     var notification_bar = $('.notification-bar');
     notification_bar.remove();
 
-    html = new EJS({
+    var html = new EJS({
         url: "../partials/" + type + "_alert.ejs"
     })
         .render( { message });
     $('body').append(html);
-    notification_bar.removeClass('fade');
+    $('body .notification-bar').removeClass('fade');
     setTimeout(function () {
-        notification_bar.addClass('fade');
+        $('body .notification-bar').addClass('fade');
     }, 3000);
 }

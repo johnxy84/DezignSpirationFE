@@ -1,12 +1,8 @@
-* {
-  font-family: 'Helvetica Neue', serif;
-}
-
 body, html {
   padding: 0;
   margin: 0;
   font-size: 14px;
-  font-family: 'Helvtica Neue', serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .page-header {
@@ -26,8 +22,8 @@ body, html {
 }
 
 #header-text {
-  font-size: 40px;
-  font-weight: 400;
+    font-size: 35px;
+    font-weight: 400;
 }
 
 .neuton {
@@ -166,6 +162,7 @@ div.round-link {
 
 p.quote {
   font-size: 22px;
+  letter-spacing: 0.5px;
 }
 
 .about-section {
@@ -226,12 +223,17 @@ p.quote {
 @media (min-width: 768px) {
   .notification-bar {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     border-radius: 0;
     max-width: 300px;
     z-index: 100;
   }
+
+    #header-text {
+        font-size: 40px;
+        font-weight: bold;
+    }
 }
 
 #submit-form:disabled {
