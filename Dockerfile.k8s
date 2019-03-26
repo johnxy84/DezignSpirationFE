@@ -1,7 +1,7 @@
 # Use the predefined node base image for this module.
 FROM node:7.0.0
 
-RUN apt-get update && apt-get install nano
+#RUN apt-get update && apt-get install nano
 
 # create the log directory
 RUN mkdir -p /var/log/applications/dezignspirationfe
