@@ -1,12 +1,12 @@
 * {
-  font-family: 'Helevetica Neue', serif;
+  font-family: 'Helvetica Neue', serif;
 }
 
 body, html {
   padding: 0;
   margin: 0;
   font-size: 14px;
-  font-family: 'Helvetica Neue', serif;
+  font-family: 'Helvtica Neue', serif;
 }
 
 .page-header {
@@ -14,8 +14,20 @@ body, html {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/bg-img.jpg)  no-repeat;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/878@2x.png) no-repeat center;
   background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    background-size: contain;
+    background-position: right;
+  }
+}
+
+#header-text {
+  font-size: 40px;
+  font-weight: 400;
 }
 
 .neuton {
@@ -59,7 +71,7 @@ button, button:focus, .btn {
 }
 
 .btn-custom.yellow {
-  background-color: yellow !important;
+  background-color: #F2CA29 !important;
   color: black !important;
 }
 
@@ -94,7 +106,7 @@ input[type=number],
 input[type=date] {
   width: 100%;
   display: block;
-  padding: 14px;
+  padding: 10px 17px;
   font-size: 14px;
   border-radius: 4px;
   text-align: left;
@@ -139,7 +151,6 @@ div.round-link {
 }
 
 .section {
-  height: 250px;
   min-height: 250px;
 }
 
@@ -182,4 +193,48 @@ p.quote {
   60% {
     transform: translateY(-15px);
   }
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column.grow {
+  flex-grow: 1;
+}
+
+.alert.green {
+  background-color: #17B11C;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.alert.red {
+  background-color: red;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.notification-bar {
+  position: fixed;
+  top: 0;
+  border-radius: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .notification-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 0;
+    max-width: 300px;
+    z-index: 100;
+  }
+}
+
+#submit-form:disabled {
+  background-color: #ccc !important;
+  cursor: not-allowed;
 }

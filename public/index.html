@@ -6,6 +6,16 @@
         <title>Dezignspiration</title>
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
 
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="apple-mobile-web-app-title" content="Dezignspiration">
+        <meta name="application-name" content="Dezignspiration">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
         <link href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css" rel="stylesheet">
         <link href="/scripts/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
@@ -14,23 +24,22 @@
     </head>
     <body>
 
-        <header class="page-header">
-            <nav class="navbar">
-                <div class="container">
-                    <h1 class="m-0 font-weight-bold text-white">Dezignspiration</h1>
-                </div>
+        <header class="page-header column grow">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand">
+                    <img src="images/logo.png" />
+                </a>
             </nav>
 
             <div class="header-content">
                 <div class="container h-100">
                     <div class="row align-items-center h-100">
                         <div class="text-left col-6 col-sm-8 col-md-6 col-lg-5 col-xl-4">
-                            <h1 style="padding: 30px 0;" class="text-white font-weight-bold neuton">
+                            <div id="header-text" style="padding: 0 0 30px 0;" class="text-white neuton">
                                 Even <u>Designers</u>,<br/>Need <u>Inspiration</u>.
-                            </h1>
+                            </div>
                             <button class="btn-custom yellow">
-                                <i class="lni-mobile"></i>
-                                Download App
+                                Download
                             </button>
                         </div>
                     </div>
@@ -116,18 +125,12 @@
             </div>
         </section>
 
-        <section class="section quote-section">
+        <section class="section quote-section py-5" id="daily-quote">
             <div class="container h-100">
-                <div class="section-content row align-items-center h-100">
-                    <div class="m-auto col-12">
-                        <div class="subscribe-form text-center">
-                            <h5 class="font-weight-bold neuton" style="font-size: 14px;">Quote of The Day</h5>
-
-                            <p class="my-5 font-weight-bold quote neuton">
-                                Design is not Just what it looks like, Design is also how it works.
-                            </p>
-
-                            <p class="font-weight-bold neuton" style="font-size: 14px;">Steve Jobs</p>
+                <div class="section-content column grow align-items-center h-100">
+                    <div class="m-auto col-12 h-100">
+                        <div class="subscribe-form text-center" id="render-quote">
+                            Loading Daily Quote...
                         </div>
                     </div>
                 </div>
@@ -159,43 +162,53 @@
         <footer class="page-footer">
             <div class="container">
                 <div class="footer-content row">
-                    <div class="col-12 col-md-5 col-lg-4 col-xl-3">
-                        <div class="contact-form">
-                            <form id="contact-form">
-                                <div class="form-group">
-                                    <Label class="label text-white font-weight-bold mb-4">
-                                        Let&apos;s hear your thoughts
-                                    </Label>
-                                    <input type="text" name="message" placeholder="Say Something..." required />
-                                </div>
-                                <button class="w-100 btn-custom white">
-                                    Send Message
-                                </button>
-                            </form>
+                    <div class="col-12">
+                        <div class="col-12 m-auto col-md-5 col-lg-4 col-xl-3">
+                            <div class="contact-form">
+                                <form id="contact-form">
+                                    <input type="hidden" name="category" value="web" />
+                                    <div class="form-group">
+                                        <Label class="label text-white font-weight-bold mb-4">
+                                            Let&apos;s hear your thoughts
+                                        </Label>
+                                        <input type="text" id="message" name="feedback" placeholder="Say Something..." required />
+                                    </div>
+                                    <button id="submit-form" type="submit" class="w-100 btn-custom white">
+                                        Send Message
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-12 offset-md-2 col-md-5 offset-lg-4 col-lg-4 offset-xl-6 col-xl-3 mt-3 text-center">
-                        <div class="col-12 my-5 my-md-0 mb-md-5">
-                            <div class="row">
-                                <div class="col-4 text-center">
-                                    <div class="m-auto round-link black align-items-center">
-                                        <img src="/images/Group%202.svg" />
+                    <div class="col-12 mt-md-5">
+                        <div class="col-12 m-auto col-md-5 offset-lg-4 col-lg-4 offset-xl-6 col-xl-3 mt-3 text-center">
+                            <div class="col-12 my-5 my-md-0 mb-md-5">
+                                <div class="row">
+                                    <div class="col-4 text-center">
+                                        <div class="m-auto round-link black align-items-center">
+                                            <a href="https://www.facebook.com/dezignspiration/" target="_blank">
+                                                <img src="/images/Group%202.svg" />
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4 text-center">
-                                    <div class="m-auto round-link black align-items-center">
-                                        <img src="/images/Group%203.svg" />
+                                    <div class="col-4 text-center">
+                                        <div class="m-auto round-link black align-items-center">
+                                            <a href="https://www.instagram.com/dezignspiration_/" target="_blank">
+                                                <img src="/images/Group%203.svg" />
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-4 text-center">
-                                    <div class="m-auto round-link black align-items-center">
-                                        <img src="/images/Group%204.svg" />
+                                    <div class="col-4 text-center">
+                                        <div class="m-auto round-link black align-items-center">
+                                            <a href="https://twitter.com/dezignspiration?s=08" target="_blank">
+                                                <img src="/images/Group%204.svg" />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-12 font-weight-bold" id="copyright"></div>
                         </div>
-                        <div class="col-12 font-weight-bold" id="copyright"></div>
                     </div>
                 </div>
             </div>
@@ -203,6 +216,7 @@
 
         <script src="/scripts/jquery/dist/jquery.js"></script>
         <script src="/scripts/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/js/ejs_production.js"></script>
         <script src="/js/main.js"></script>
     </body>
 </html>
