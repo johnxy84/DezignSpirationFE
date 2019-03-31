@@ -3,6 +3,8 @@ body, html {
   margin: 0;
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.7px;
+  line-height: 30px;
 }
 
 .page-header {
@@ -12,13 +14,12 @@ body, html {
   flex-direction: column;
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/878@2x.png) no-repeat center;
   background-size: cover;
+  line-height: 50px;
 }
 
-@media (min-width: 768px) {
-  .page-header {
-    background-size: contain;
-    background-position: right;
-  }
+.opening-line {
+  font-size: 1.2rem;
+  line-height: 30px;
 }
 
 #header-text {
@@ -64,6 +65,7 @@ button, button:focus, .btn {
   border-radius: 4px;
   transition: all .2s linear;
   border: 0;
+  line-height: 20px;
 }
 
 .btn-custom.yellow {
@@ -230,10 +232,20 @@ p.quote {
     z-index: 100;
   }
 
-    #header-text {
-        font-size: 40px;
-        font-weight: bold;
-    }
+  #header-text {
+      font-size: 40px;
+      font-weight: bold;
+  }
+
+  .page-header {
+    background-size: contain;
+    background-position: right;
+  }
+
+  .opening-line {
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
 }
 
 #submit-form:disabled {
