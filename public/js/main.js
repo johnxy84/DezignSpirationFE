@@ -63,7 +63,7 @@ $(document).ready(function () {
             success: function (response) {
                 $('#submit-form').removeAttr('disabled');
                 message.val('');
-                renderAlert('success', "Feedback sent successfully!");
+                renderAlert('success', "Thanks for your valuable opinion");
             },
             error: function (error) {
                 $('#submit-form').removeAttr('disabled');
